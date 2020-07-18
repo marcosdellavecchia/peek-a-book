@@ -6,7 +6,7 @@ class Header extends React.Component {
       <a href="/">
         <div className="container-fluid header">
           <i className="fas fa-book fa-2x"></i>
-          <h1>findbooks</h1>
+          <h1>Brolis</h1>
         </div>
       </a>
     );
