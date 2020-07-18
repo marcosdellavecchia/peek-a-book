@@ -16,36 +16,40 @@ body {
   margin-right: 10px;
 }
 
-.search-area {
+.search {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 
-.search-input {
-  margin: auto auto;
+.searchTerm {
+  width: 280px;
+  border: 3px solid #5b3475;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #333333;
 }
 
-.search-button {
-  display: inline-block;
-  padding: 0.3em 1em;
-  border: 0.1em solid #5b3475;
-  margin-left: 8px;
-  border-radius: 0.12em;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+.searchTerm:focus {
   color: #5b3475;
-  text-align: center;
-  transition: all 0.2s;
 }
 
-.search-button:hover {
-  color: #f3f3f3;
-  background-color: #5b3475;
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #5b3475;
+  background: #5b3475;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 .booklist {
@@ -55,18 +59,8 @@ body {
 }
 
 .footer {
-  margin-top: 50px;
   font-size: 0.825em;
   color: #666666;
-  text-align: center;
-  width: 70%;
-}
-
-.container-footer {
-  padding-top: 150px;
-  margin-bottom: 25px;
-  display: flex;
-  justify-content: center;
 }
 
 .card {
@@ -109,4 +103,9 @@ body {
   color: #666;
   font-size: 0.825em;
   line-height: 0.25;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
 }
