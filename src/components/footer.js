@@ -6,7 +6,18 @@ function Footer() {
       <div className="container">
         <hr />
         <p className="footer text-center">
-          Copyright Findbooks 2020 - Powered by Google Books API
+          Copyright Peek-a-Book 2020 -{" "}
+          <a
+            href="https://github.com/marcosdellavecchia"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Hecho con{" "}
+            <span role="img" aria-label="Purple heart">
+              💜
+            </span>{" "}
+            por Marcos DV
+          </a>
         </p>
       </div>
     </React.Fragment>

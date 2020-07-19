@@ -26,11 +26,14 @@ class Books extends React.Component {
       .then((response) => {
         return response.json();
       })
-      //Agrega al estado 'books' todos los items encontrados en data
+      //Agrega al estado books todos los items encontrados en data y posteriormente 'limpiados'
       .then((data) => {
         const cleanData = this.cleanData(data);
         this.setState({ books: cleanData });
-      });
+      })
+
+      //Catch de errores. En principio utilice event.preventDefault pero la documentacion de React recomienda utilizar persist para estos casos.
+      .catch((err) => e.persist());
   };
 
   //Le da una propiedad default a los datos que no existan en el libro solicitado.

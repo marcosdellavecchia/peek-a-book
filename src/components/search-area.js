@@ -6,6 +6,7 @@ function SearchArea(props) {
       <div className="search">
         <form onSubmit={props.searchBook} id="form" action="">
           <input
+            required
             className="searchTerm"
             type="text"
             placeholder="¿Que libro estás buscando?"

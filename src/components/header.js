@@ -1,12 +1,12 @@
 import React from "react";
+import logo from "../logo-pab.png";
 
 class Header extends React.Component {
   render() {
     return (
       <a href="/">
         <div className="container-fluid header">
-          <i className="fas fa-book fa-2x"></i>
-          <h1>Peek-a-book</h1>
+          <img className="logo" src={logo} alt="" />
         </div>
       </a>
     );
