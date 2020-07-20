@@ -8,8 +8,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.logo {
+  width: 320px;
 }
 
 .search {
@@ -105,4 +109,10 @@ body {
 a {
   text-decoration: none !important;
   color: inherit !important;
+}
+
+@media only screen and (max-width: 480px) {
+  .logo {
+    width: 220px;
+  }
 }
